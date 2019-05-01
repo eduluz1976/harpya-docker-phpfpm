@@ -2,7 +2,7 @@ FROM phalconphp/php-fpm:latest
 
 WORKDIR /srv/app
 
-COPY  .docker/app/run_fpm.sh /root
+COPY  run_fpm.sh /root
 
 RUN echo "deb-src http://ppa.launchpad.net/chris-lea/libsodium/ubuntu precise main" >> /etc/apt/sources.list \
     && echo "deb http://ppa.launchpad.net/chris-lea/libsodium/ubuntu precise main" >> /etc/apt/sources.list \
